@@ -1,0 +1,20 @@
+.footer {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 10px;
+}
+
+.footer i {
+  padding: 20px;
+  font-size: 30px;
+  color:  #282B3A;
+}
+
+.footer p {
+  font-size: 15px;
+  color: #282B3A;
+  font-family: 'Anonymous Pro', monospace;
+}
