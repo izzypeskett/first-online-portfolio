@@ -1,0 +1,16 @@
+box {
+  height: calc(100%-20px);
+  width: calc(100%-20px);
+  background: white;
+  border-radius: 25px;
+  text-align: center;
+}
+
+box .podcast {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+box p {
+
+}

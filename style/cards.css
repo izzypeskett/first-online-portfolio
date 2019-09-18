@@ -1,0 +1,51 @@
+.interest-card {
+  margin: 10px;
+  grid-row: 3/6;
+  grid-column: 2/5;
+  background: blue;
+}
+
+.value-card {
+  margin: 10px;
+  grid-row: 3/6;
+  grid-column: 5/8;
+  background: blue;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.detail-sidebar {
+  grid-row: 1/7;
+  grid-column: 12/13;
+  border-left: 2px black solid;
+  /* transition: all .2s ease-in-out; */
+  
+}
+
+.detail-sidebar .test {
+  display: none;
+}
+
+.detail-sidebar:hover {
+  grid-row: 1/7;
+  grid-column: 10/13;
+  padding: 10px;
+}
+
+.detail-sidebar:hover .test {
+  display: block;
+  display: flex;
+  height: 90%;
+  width: 90%;
+  font-family: 'Poppins', sans-serif;
+}

@@ -1,5 +1,6 @@
+
 .header {
-  height: 100px;
+  height: 80px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -19,4 +20,11 @@
 .header nav a {
   font-size: 15px;
   padding: 30px;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: #FE7F52;
+  filter: opacity(0.6);
 }
