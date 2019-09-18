@@ -62,19 +62,6 @@ body {
   opacity: 0.6;
 }
 
-.main .square {
-  height: 100%;
-  width: 100%;
-  grid-row: 2/6;
-  grid-column: 8/13;
-  background: #282B3A;
-  opacity: 0.8;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  filter: blur(10px);
-}
-
-
 
 .about-izzy {
   grid-row: 3/4;
@@ -90,3 +77,97 @@ body {
   grid-gap: 20px;
 }
 
+
+.projects {
+  grid-row: 3/6;
+  grid-column: 3/11;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 0px 20px 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.notes {
+  grid-row: 3/6;
+  grid-column: 2/12;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.featured-note {
+  height: 90%;
+  width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.featured-note img {
+  margin: 10px 0px 0px 0px;
+  height: 50%;
+  width: 90%;
+}
+
+.featured-note .content {
+  text-align: center;
+}
+
+.featured-note h4 {
+  margin: 10px 0px 2px 0px;
+}
+.featured-note sub {
+  padding: 0px;
+  margin: 0px;
+}
+
+.featured-note p {
+  font-size: small;
+  color: #d7d6de;
+  padding: 35px 0px 0px 0px;
+}
+
+.featured-note button {
+  margin: 0px auto;
+  background: none;
+  color: #fe7f52;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.featured-note button a {
+  color: #fe7f52;
+}
+
+.notes-container {
+  margin: 10px;
+  height: calc(100vh - 150px);
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.notes-container .article {
+  width: inherit;
+  height: inherit;
+  /* overflow: scroll; */
+  text-align: center;
+  margin: 0px auto;
+}
+
+.notes-container .article img {
+  height: 400px;
+  width: inherit;
+}
+
+.notes-container .article h3, sub, p {
+  text-align: left;
+}

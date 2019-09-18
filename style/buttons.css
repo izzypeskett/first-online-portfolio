@@ -27,6 +27,20 @@
   box-shadow: -1px 3px 5px 4px rgba(235,235,235,1);
 }
 
-button:hover {
-  filter: blur(1px);
+
+button {
+  background: #FE7F52;
+  color: #ebebeb;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 25px;
+  width: 70%;
+  border: none;
+  margin: 0px auto;
 }
+
+
+
+
+
