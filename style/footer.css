@@ -1,6 +1,7 @@
 .footer {
+  /* margin-top: auto; */
   height: 50px;
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -8,7 +9,7 @@
 }
 
 .footer i {
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
   font-size: 30px;
   color:  #282B3A;
 }
@@ -18,4 +19,14 @@
   font-size: 15px;
   color: #282B3A;
   font-family: 'Anonymous Pro', monospace;
+}
+
+@media only screen and (max-width:600px) {
+  .footer p {
+    display: none;
+  }
+
+  .footer {
+    margin-top: auto;
+  }
 }

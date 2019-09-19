@@ -1,16 +1,28 @@
 .interest-card {
-  margin: 10px;
-  grid-row: 3/6;
+  grid-row: 2/6;
   grid-column: 2/5;
-  background: blue;
+}
+
+
+.interest-card h2:before {
+  content: " ";
+    display: block;
+    position: absolute;
+    background: #fe7f52;
+    opacity: 0.65;
+    margin: 15px 0px 0px 0px;
+    z-index: -1; /* Displays pseudo element behind text */
+    width: 140px;
+    height: 10px;
 }
 
 .value-card {
   margin: 10px;
-  grid-row: 3/6;
-  grid-column: 5/8;
-  background: blue;
+  grid-row: 2/6;
+  grid-column: 6/10;
 }
+
+
 
 @keyframes fadeInRight {
   from {
@@ -114,6 +126,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 
@@ -153,4 +166,50 @@
   text-decoration: none;
   color: #fe7f52;
   padding: 5px;
+}
+
+.featured-notes a {
+  text-decoration: none;
+}
+.featured-notes a .featured {
+  width: 250px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 0px 20px 20px 20px;
+}
+
+a .featured img {
+  height: 60%;
+  width: 100%;
+}
+
+a .featured .content {
+  margin: 5px 10px 5px 20px;
+}
+
+a .featured .content h4 {
+  font-size: 20px;
+  color: grey;
+}
+
+
+
+
+
+@media only screen and (max-width:600px) {
+  .projects .container {
+    height: 100px;
+  }
+
+  .interest-card {
+    grid-column: 2/11;
+  }
+  .value-card {
+    grid-row: auto;
+    grid-column: 2/11;
+  }
+
+  .detail-sidebar {
+    display:none;
+  }
 }

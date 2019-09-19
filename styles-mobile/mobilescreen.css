@@ -1,16 +1,4 @@
-body {
-  margin: 0px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 2px;
-  color: #282B3A;
-}
+@media only screen and (max-width: 600px) {
 
 header {
   height: 80px;
@@ -75,7 +63,7 @@ header .logo {
           box-shadow: -8px 0 8px rgba(0,0,0,.5);
   min-height: 100%;
   width: 200px;
-  background: transparent;
+  background: white;
 }
 
 .main-menu a {
@@ -183,8 +171,8 @@ article h2 {
   width: 100%;
   height: 100%;
   z-index: 998;
-  background: #000;
-  background: rgba(0,0,0,.85);
+  background: white;
+  background: white;
   cursor: default;
 }
 
@@ -196,4 +184,4 @@ article h2 {
   }
 }
 
-
+}

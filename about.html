@@ -12,38 +12,66 @@
 </head>
 <body>
   <div class="container">
-  <div class="header">
-      <a href="./index.html">Izzy.</a>
-      <nav>
-        <a href="#">About.</a>
-        <a href="./portfolio.html">Portfolio.</a>
-        <a href="./notes.html">Notes.</a>
-        <a href="#contact">Contact.</a>
-      </nav>
-  </div>
-  <div class="main">
-      <div class="heading">
-          <span class="typing-words">
-              <span class="word" text="designer"> Interests. &nbsp;&nbsp; </span><span class="word" text="Line 2">Values.&nbsp; </span><span class="word" text="Line 3.">About Izzy. </span>
-            </span>
+
+      <header>
+          <a href="#main-menu" id="main-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </a>
+    
+           <a href="./index.html" class="logo">Izzy.</a>
+          
+    
+          <nav id="main-menu" class="main-menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-class">
+              <i class="fa fa-close"></i>
+            </a>
+            <ul>
+            <li><a href="./about.html">About.</a></li>
+            <li><a href="./portfolio.html">Portfolio.</a></li>
+            <li><a href="./notes.html">Notes.</a></li>
+            <li><a href="#contact">Contact.</a></li>
+            </ul>
+          </nav>
+    
+          <a href="#main-menu-toggle"
+          class="backdrop"
+          tabindex="-1"></a>
+    
+        </header>
+  <div class="block">
+    <div class="main">
+      
+        <div class="heading">
+            <span class="typing-words">
+                <span class="word" text="designer"> Interests. &nbsp;&nbsp; </span><span class="word" text="Line 2">Values.&nbsp; </span><span class="word" text="Line 3.">About Izzy. </span>
+              </span>
+            </div>
+
+        <div class="interest-card">
+          <h2>Interests.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem aperiam harum, odio, error labore maiores vitae ratione dignissimos a dolorum quod voluptatibus mollitia laudantium tempora animi et voluptatem possimus molestiae? Saepe, illum repudiandae! Eos obcaecati dolorem, hic eius placeat velit voluptas earum soluta illum ipsam sunt quibusdam nisi minima.</p>
+        </div>
+
+        <div class="value-card">
+          <h2>Values.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore modi provident nobis eius atque recusandae, minima assumenda nisi, quasi, laboriosam ut ex dolorem dolorum pariatur quo. Debitis exercitationem asperiores libero culpa enim provident saepe architecto veritatis consequuntur cum quidem quo reiciendis minima expedita voluptatibus incidunt nam nihil, sed harum dolore.</p>
+        </div>
+        <div class="detail-sidebar">
+            <i class="fas fa-angle-double-left"></i>
+          <div class="test">
+            <div class="podcast">
+              <h4>Listening to:</h4>
+              <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation allow-popups" scrolling=no width="100%" height="185" frameborder="0" src="https://embed.radiopublic.com/e?if=design-better-podcast-G1VkQj&ge=s1!55b6cd097932fa72b0edd190a2e63d536bb68615"></iframe>
+            </div>
+            <div class="twitter">
+              <h4>Pondering over:</h4>
+              <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark" data-link-color="#2B7BB9"><p lang="en" dir="ltr">You have enough time; you just don&#39;t have your priorities straight.</p>&mdash; Kunal (@CrazyPolymath) <a href="https://twitter.com/CrazyPolymath/status/1173589855936417793?ref_src=twsrc%5Etfw">September 16, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
           </div>
-      <div class="interest-card"></div>
-      <div class="value-card"></div>
-      <div class="detail-sidebar">
-          <i class="fas fa-angle-double-left"></i>
-        <div class="test">
-          <div class="podcast">
-            <h4>Listening to:</h4>
-            <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation allow-popups" scrolling=no width="100%" height="185" frameborder="0" src="https://embed.radiopublic.com/e?if=design-better-podcast-G1VkQj&ge=s1!55b6cd097932fa72b0edd190a2e63d536bb68615"></iframe>
-          </div>
-          <div class="twitter">
-            <h4>Pondering over:</h4>
-            <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark" data-link-color="#2B7BB9"><p lang="en" dir="ltr">You have enough time; you just don&#39;t have your priorities straight.</p>&mdash; Kunal (@CrazyPolymath) <a href="https://twitter.com/CrazyPolymath/status/1173589855936417793?ref_src=twsrc%5Etfw">September 16, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
+          
         </div>
         
-      </div>
-      
+    </div>
   </div>
 
   <div class="footer">

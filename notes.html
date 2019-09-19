@@ -13,16 +13,32 @@
 <body>
   <div class="container">
 
-    <div class="header">
-      <a href="./index.html">Izzy.</a>
-      <nav>
-        <a href="./about.html">About.</a>
-        <a href="./portfolio.html">Portfolio.</a>
-        <a href="#notes">Notes.</a>
-        <a href="#contact">Contact.</a>
-      </nav>
-    </div>
-
+      <header>
+          <a href="#main-menu" id="main-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </a>
+    
+           <a href="./index.html" class="logo">Izzy.</a>
+          
+    
+          <nav id="main-menu" class="main-menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-class">
+              <i class="fa fa-close"></i>
+            </a>
+            <ul>
+            <li><a href="./about.html">About.</a></li>
+            <li><a href="./portfolio.html">Portfolio.</a></li>
+            <li><a href="./notes.html">Notes.</a></li>
+            <li><a href="#contact">Contact.</a></li>
+            </ul>
+          </nav>
+    
+          <a href="#main-menu-toggle"
+          class="backdrop"
+          tabindex="-1"></a>
+    
+        </header>
+  <div class="block">
     <div class="main">
 
       <div class="heading">
@@ -30,27 +46,48 @@
             <span class="word" text="designer"> Blogs. &nbsp;&nbsp; </span><span class="word" text="Line 2">Articles.&nbsp; </span><span class="word" text="Line 3.">Notes by Izzy. </span>
           </span>
         </div>
-       
+
+      
+
         <div class="notes">
 
-          <div class="featured-note">
-            <img src="./assets/clement-h-95YRwf6CNw8-unsplash.jpg" alt="test-image">
-            <div class="content">
-              <h4>Example blog title.</h4>
-              <sub>18 Sep 2019</sub>
-              <p>#tech #css #ruby</p>
-              <button id="read-more"><a href="./allnotes.html"><i class="fas fa-angle-double-right"></a></i></button>
-            </div>
+          <div class="featured-notes">
+            <a href="#note-one"><div class="featured">
+              <img src="./assets/clement-h-95YRwf6CNw8-unsplash.jpg" alt="test-image">
+              <div class="content">
+                <h4>Example title</h4>
+                <sub>18 Sep 2019</sub>
+              </div>
+            </div></a>
+            <a href=""><div class="featured"></div></a>
+            <a href=""><div class="featured"></div></a>
+            <a href=""><div class="featured"></div></a>
           </div>
-          <div class="featured-note"></div>
-          <div class="featured-note"></div>
-          <div class="featured-note"></div>
-          <div class="featured-note"></div>
+
+          <div class="notepost" id="note-one">
+            <img src="./assets/clement-h-95YRwf6CNw8-unsplash.jpg" alt="test">
+            <h4>Example title.</h4>
+            <sub>19 Sep 2019</sub>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis at distinctio vero sit rerum error magnam accusantium aspernatur officia voluptatibus laudantium et, libero, culpa dignissimos! Sapiente labore, rem, dolores mollitia necessitatibus, et aspernatur velit amet fugiat nisi aut cum accusantium! Reprehenderit voluptatem debitis, cumque rem, consequuntur architecto eum animi accusantium corrupti ratione molestiae. Architecto temporibus, commodi tenetur quos dolorum repudiandae facilis consequuntur impedit reiciendis dignissimos officiis odit inventore voluptas doloribus quis velit sint blanditiis, recusandae quam et. Eveniet exercitationem corporis quidem tempora explicabo, cupiditate reiciendis suscipit nam ut deserunt, quas a quaerat, magni voluptatibus ex impedit culpa incidunt minima inventore sunt earum! Ea sapiente recusandae molestiae ut? Tenetur dolores aut reprehenderit voluptatum voluptas, voluptatem earum facere laboriosam enim cupiditate tempora at dolore deleniti excepturi, perspiciatis ut et qui quis beatae consectetur? Placeat, fuga labore. Ducimus fuga adipisci provident quisquam odit esse. Error enim pariatur quis facere deserunt doloribus similique quibusdam aut consequuntur minus quidem quisquam omnis veritatis, qui sint architecto hic magnam dolores! Iure hic ad quasi laudantium distinctio recusandae optio doloribus soluta eius repellat. Quod, voluptatem odio vitae quam eius, dolorum blanditiis quidem eos accusamus voluptatibus sunt veritatis sequi voluptate ipsam cupiditate facere aspernatur. Fugit exercitationem architecto, velit maxime magnam asperiores placeat dolor provident. Dignissimos alias, nisi cum perspiciatis maiores incidunt harum distinctio obcaecati quisquam debitis ut quidem numquam explicabo asperiores? Aperiam quos hic debitis ex repellendus vero accusantium beatae illo culpa voluptatem? Corporis aliquid, possimus tenetur debitis voluptatem ex sunt commodi doloremque accusantium eum aperiam laboriosam iure sed consequuntur unde tempore non, fugiat quo aspernatur. Modi provident reiciendis repellat, incidunt repudiandae esse corporis nihil at, ea veritatis officia. Cumque omnis qui delectus ea veniam, culpa animi magni voluptas error adipisci ipsa enim deleniti unde sed similique voluptate ducimus eveniet, excepturi numquam. Ex amet ea ab ratione officia? Rerum ipsa unde deserunt deleniti explicabo culpa numquam molestias, temporibus, odit necessitatibus corporis rem, impedit illum id modi aperiam similique nihil alias. Mollitia ipsam iusto alias libero voluptates minima dolore numquam, sequi explicabo eius ipsa unde incidunt reprehenderit a laudantium veniam nisi non exercitationem debitis in quos architecto cupiditate totam dolorum. Voluptatem hic assumenda dicta ipsam, autem ab inventore natus commodi in magni quibusdam tenetur voluptatum labore maxime, velit eum nihil ea odio nostrum cum reiciendis. Nihil dignissimos porro quam dicta nemo eaque temporibus nesciunt amet corporis praesentium assumenda officiis nam, aut delectus ea culpa cum sapiente fugit. Possimus, recusandae?</p>
+            <hr>
+          </div>
+
+          <div class="notepost">
+              <img src="./assets/clement-h-95YRwf6CNw8-unsplash.jpg" alt="test">
+              <h4>Example title.</h4>
+              <sub>19 Sep 2019</sub>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis at distinctio vero sit rerum error magnam accusantium aspernatur officia voluptatibus laudantium et, libero, culpa dignissimos! Sapiente labore, rem, dolores mollitia necessitatibus, et aspernatur velit amet fugiat nisi aut cum accusantium! Reprehenderit voluptatem debitis, cumque rem, consequuntur architecto eum animi accusantium corrupti ratione molestiae. Architecto temporibus, commodi tenetur quos dolorum repudiandae facilis consequuntur impedit reiciendis dignissimos officiis odit inventore voluptas doloribus quis velit sint blanditiis, recusandae quam et. Eveniet exercitationem corporis quidem tempora explicabo, cupiditate reiciendis suscipit nam ut deserunt, quas a quaerat, magni voluptatibus ex impedit culpa incidunt minima inventore sunt earum! Ea sapiente recusandae molestiae ut? Tenetur dolores aut reprehenderit voluptatum voluptas, voluptatem earum facere laboriosam enim cupiditate tempora at dolore deleniti excepturi, perspiciatis ut et qui quis beatae consectetur? Placeat, fuga labore. Ducimus fuga adipisci provident quisquam odit esse. Error enim pariatur quis facere deserunt doloribus similique quibusdam aut consequuntur minus quidem quisquam omnis veritatis, qui sint architecto hic magnam dolores! Iure hic ad quasi laudantium distinctio recusandae optio doloribus soluta eius repellat. Quod, voluptatem odio vitae quam eius, dolorum blanditiis quidem eos accusamus voluptatibus sunt veritatis sequi voluptate ipsam cupiditate facere aspernatur. Fugit exercitationem architecto, velit maxime magnam asperiores placeat dolor provident. Dignissimos alias, nisi cum perspiciatis maiores incidunt harum distinctio obcaecati quisquam debitis ut quidem numquam explicabo asperiores? Aperiam quos hic debitis ex repellendus vero accusantium beatae illo culpa voluptatem? Corporis aliquid, possimus tenetur debitis voluptatem ex sunt commodi doloremque accusantium eum aperiam laboriosam iure sed consequuntur unde tempore non, fugiat quo aspernatur. Modi provident reiciendis repellat, incidunt repudiandae esse corporis nihil at, ea veritatis officia. Cumque omnis qui delectus ea veniam, culpa animi magni voluptas error adipisci ipsa enim deleniti unde sed similique voluptate ducimus eveniet, excepturi numquam. Ex amet ea ab ratione officia? Rerum ipsa unde deserunt deleniti explicabo culpa numquam molestias, temporibus, odit necessitatibus corporis rem, impedit illum id modi aperiam similique nihil alias. Mollitia ipsam iusto alias libero voluptates minima dolore numquam, sequi explicabo eius ipsa unde incidunt reprehenderit a laudantium veniam nisi non exercitationem debitis in quos architecto cupiditate totam dolorum. Voluptatem hic assumenda dicta ipsam, autem ab inventore natus commodi in magni quibusdam tenetur voluptatum labore maxime, velit eum nihil ea odio nostrum cum reiciendis. Nihil dignissimos porro quam dicta nemo eaque temporibus nesciunt amet corporis praesentium assumenda officiis nam, aut delectus ea culpa cum sapiente fugit. Possimus, recusandae?</p>
+              <hr>
+            </div>
+
+        </div>
+       
+     
 
         </div>
         
       </div>
-
+    </div>
     <div class="footer">
       <p>get social</p>
       <i class="fab fa-github"></i>
