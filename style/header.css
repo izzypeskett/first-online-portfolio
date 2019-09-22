@@ -248,7 +248,5 @@ header nav a:hover:before {
   .main-menu[aria-expanded="true"] + .backdrop{
     position: fixed;
   }
-
-
-
+}
 }
