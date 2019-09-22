@@ -1,7 +1,5 @@
 .footer {
-  /* margin-top: auto; */
   height: 50px;
-  /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -29,4 +27,5 @@
   .footer {
     margin-top: auto;
   }
+
 }

@@ -1,95 +1,24 @@
-.interest-card {
-  grid-row: 2/6;
-  grid-column: 2/5;
-}
 
-
-.interest-card h2:before {
-  content: " ";
-    display: block;
-    position: absolute;
-    background: #fe7f52;
-    opacity: 0.65;
-    margin: 15px 0px 0px 0px;
-    z-index: -1; /* Displays pseudo element behind text */
-    width: 140px;
-    height: 10px;
-}
-
-.value-card {
-  margin: 10px;
-  grid-row: 2/6;
-  grid-column: 6/10;
-}
-
-
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.detail-sidebar {
-  grid-row: 1/7;
-  grid-column: 12/13;
-  margin: 10px 0px 0px 100px;
-  width: 40px;
-  transition: width 2s;
-  
-}
-
-.detail-sidebar i {
-  font-size: 40px;
-  color: #D7D6DE;
-}
-
-.detail-sidebar .test {
-  display: none;
-}
-
-.detail-sidebar:hover {
-  grid-row: 1/7;
-  padding: 10px;
-  width: 300px;
-  filter: none;
-  
-}
-
-.detail-sidebar:hover .test {
-  display: block;
-  display: flex;
-  height: 90%;
-  width: 90%;
-  font-family: 'Poppins', sans-serif;
-  color: #282B3A;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-
-.detail-sidebar:hover .test .twitter {
+ .sidebar-cards {
   width: 100%;
-  max-height: 45%;
-  margin: 10px;
+  height: 100px;
 }
 
-
+.sidebar-cards i {
+  font-size: 20px;
+}
 
 .projects .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   width: 300px;
-  height: 350px;
+  height: 375px;
   background-color: transparent;
   border: 1px solid #f1f1f1;
   perspective: 1000px
+}
+
+.projects .mobile-card {
+  display: none;
 }
 
 .projects .card-inner {
@@ -104,7 +33,6 @@
 .projects .card:hover .card-inner {
   transform: rotateY(180deg);
 }
-
 
  .card-front, .card-back {
   position: absolute;
@@ -129,7 +57,6 @@
   height: auto;
 }
 
-
 .card-front i {
   font-size: 100px;
   color: #282B3A;
@@ -145,8 +72,6 @@
   height: 100%;
   width: 100%;
 }
-
-
 
 .card-back .information h4, p {
   padding: 2px;
@@ -171,11 +96,13 @@
 .featured-notes a {
   text-decoration: none;
 }
+
 .featured-notes a .featured {
   width: 250px;
   height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 0px 20px 20px 20px;
+
 }
 
 a .featured img {
@@ -184,32 +111,69 @@ a .featured img {
 }
 
 a .featured .content {
-  margin: 5px 10px 5px 20px;
+  margin: 5px 10px 5px 20px
 }
 
 a .featured .content h4 {
-  font-size: 20px;
-  color: grey;
+  color: #282B3A;
+  margin: 0px;
+}
+
+a .featured .content sub {
+  margin-bottom: 5px;
+  color: #D7D6DE;
 }
 
 
-
-
-
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
   .projects .container {
     height: 100px;
   }
-
-  .interest-card {
-    grid-column: 2/11;
-  }
-  .value-card {
-    grid-row: auto;
-    grid-column: 2/11;
+  .projects .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    height: 100%;
   }
 
-  .detail-sidebar {
-    display:none;
+  .projects .card-inner {
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: unset;
+    transition: none;
+
   }
+
+  .projects .card:hover .card-inner {
+    transform: none;
+  }
+
+  .card-front {
+    width: 100%;
+    height: 40%;
+    backface-visibility: unset;
+    position: unset;
+    /* backface-visibility: hidden; */
+  }
+
+  .card-front i {
+    z-index: -1;
+    font-size: 100px;
+    color: #282B3A;
+    padding: 10px 5px 0px 5px;
+  }
+
+
+  .card-back {
+    position: unset;
+    display: block;
+    transform: none;
+    width: 100%;
+    height: auto;
+    backface-visibility: none;
+  }
+
+
+
 }

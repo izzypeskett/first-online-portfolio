@@ -1,3 +1,14 @@
+@keyframes fadeInRight {
+  from {
+    opacity: 0.65;
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  to {
+    opacity: 0.65;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 header {
   height: 80px;
@@ -7,13 +18,6 @@ header {
   padding: 0px 60px 0px 60px;
   box-shadow: 0px 11px 22px -6px rgba(215,213,224,1);
 }
-
-@media only screen and (min-width:801px) {
-#main-menu-toggle, #main-menu-close, .backdrop {
-  display:none;
-}
-}
-
 
 header a {
   text-decoration: none;
@@ -34,18 +38,44 @@ header nav ul li {
 
 header nav a {
   font-size: 15px;
-  padding: 30px;
+  padding: 0px 30px 0px 30px;
   text-decoration: none;
 }
 
-header nav a:hover {
-  text-decoration: underline;
-  text-decoration-style: double;
-  text-decoration-color: #FE7F52;
-  filter: opacity(0.6);
+header nav a:hover:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    background: #fe7f52;
+    opacity: 0.65;
+    margin: 10px 0px 0px 30px;
+    z-index: -1; /* Displays pseudo element behind text */
+    width: 80px;
+    height: 10px;
+    animation: fadeInRight;
+    animation-duration: 0.5s;
 }
 
+.links li .active:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: #fe7f52;
+  opacity: 0.65;
+  margin: 10px 0px 0px 30px;
+  z-index: -1; /* Displays pseudo element behind text */
+  width: 80px;
+  height: 10px;
+}
+
+#main-menu-toggle, #main-menu-close, .backdrop {
+  display:none;
+}
+
+
 @media only screen and (max-width: 800px) {
+
+
 header {
   height: 80px;
   width: 100vw;
@@ -82,10 +112,6 @@ header .logo {
   color: #c00;
 }
 
-/*
- Default styles + Mobile first
- Offscreen menu style
-*/
 .main-menu {
   position: absolute;
   display: none;
@@ -121,8 +147,6 @@ header .logo {
   text-decoration: none;  
 }
 
-
-
 .main-menu a:hover,
 .main-menu a:focus {
   background: #fe7f52;
@@ -135,15 +159,6 @@ header .logo {
   top: 0;
 }
 
-
-/*
- More to come here...
-*/
-
-
-/*
- Demo purposes only
-*/
 *,
 *:before,
 *:after {
@@ -176,20 +191,12 @@ article h2 {
   color: #282B3A;
 }
 
-/*
- On small devices, allow it to toggle...
-*/
-/*
- :target for non-JavaScript
- [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-*/
+
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
   display: block;
   left: 0;
   outline: none;
-  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
   box-shadow: 3px 0 12px rgba(0,0,0,.25);
 }
 
@@ -204,10 +211,6 @@ article h2 {
   z-index: 1000;
 }
 
-/* 
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
 .main-menu:target + .backdrop,
 .main-menu[aria-expanded="true"] + .backdrop{
   position: absolute;
@@ -221,6 +224,23 @@ article h2 {
   background: white;
   cursor: default;
 }
+#main-menu-toggle, #main-menu-close, .backdrop {
+  display: inline-block;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+header nav a:hover:before {
+  display: none;
+}
+
+.links li .active:before {
+  display: none;
+}
 
 @supports (position: fixed) {
   .main-menu,
@@ -228,6 +248,7 @@ article h2 {
   .main-menu[aria-expanded="true"] + .backdrop{
     position: fixed;
   }
-}
+
+
 
 }
