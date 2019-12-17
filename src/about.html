@@ -11,6 +11,22 @@
   <script src="https://kit.fontawesome.com/4eb9ec9187.js"></script>
 </head>
 <body>
+  <style>
+    .container {
+      opacity: 0;
+      transition: opacity 2s;
+    }
+
+    .container-loaded {
+      opacity: 1;
+    }
+  </style>
+    <script>
+      window.addEventListener('load', (event) => {
+        let div = document.querySelector('.container')
+        div.classList.add('container-loaded');
+      });
+    </script>
     <header>
     <a href="#main-menu" id="main-menu-toggle">
       <i class="fas fa-bars"></i>
@@ -40,70 +56,42 @@
 
       
   <div class="block">
-    <div class="main">
-        <div class="small-tag">
-          <p>Cycle through some more interests.</p>
-          <img src="./assets/noun_Arrow_2342580.svg" alt="arrow">
+    <div class="about-container">
+
+   
+     <div class="heading-container">
+        <div class="inner-container">
+          <p>Be interested and interesting.</p>
         </div>
-        <div class="heading">
-            <div class="typing-words">
-                <div class="word" text="designer"> Interests. &nbsp;&nbsp; </div><div class="word" text="Line 2">Skills.&nbsp; </div><div class="word" text="Line 3.">About Izzy. </div>
-            </div>
-            </div>
-      <div class="about-izzy">
-        <h1>Hey, I'm Izzy Peskett.</h1>
-        <p>I'm a junior software developer with a keen interest in UX, emerging technology and the ever growing and intertwining relationship between humans and tech.</p>
       </div>
-
-      <div class="about" id="story">
-        <h1>In 25 words or less..</h1>
-        <p>I began my journey as an elite athlete. One thing was on my mind playing hockey for Australia. Unfortunately we can't all play for our country. So I did the next best thing and studied sport science. The creative child inside me was having quite a spat. I changed tact, to nutrition. With a Bachelor of Nutrition under my belt I set out to make my own mushroom coffee blend. Being a conscious millenial I ensured best practice for sustainability by sourcing 100% decompostable packaging for the mushroom coffee. Click here for a look, maybe even a buy.</p>
-        <p>As much as I love all things health, environment and start-ups. I was after more. Cue software development.</p>
-        <p>I am currently over half way through Coder Academy's Fast Track bootcamp and come early February I will be a Full Stack Developer.</p>
-        <p>25 words, close enough.</p>
-      </div>
-
-      <div class="about" id="work">
-        <h1>What excites me?</h1>
-        <p>Single origin long blacks and homemade nachos.</p>
-        <p>Work that is purpose driven and has humans at the centre. I get invigorated by working in a team environment, stimulated by challenging projects and motivated by the desire to continue to learn and improve. And yes I am a big fan of agile methodology. I am fascinated with how users experience not only technology and applications but life. A question I ponder is how can I make their day, week and life better. What experience can I provide?</p>
-      </div>
-
-      <div class="about" id="approach">
-        <h1>A wise human once said...</h1>
-        <p><em>Two roads diverged in the woods, and I took the one less travelled by, and that has made all the difference.</em></p>
-        <p>That human was Robert Frost.</p>
-        <p>And those words sum up how I approach not only my work but my life. I don't like to take the easy or the typical route. I like to extend the seams and explore the more, because I find the reward is so much greater.</p>
-        <p>My strengths lie in problem solving, algorithmic thinking, designing for humans and ideating new concepts.</p>
-        <p>On a technical level the stack, languages and frameworks I have worked with include Ruby on Rails, HTML5, CSS, SASS, POSTGRESQL, AWS, Vanilla Javascript and Node.JS. By the end of February I will have knowledge and worked with the MERN stack, including React. I have used Github, Trello and wireframing software like Figma. </p>
-      </div>
-
 
         
-        <div class="detail-sidebar">
-            <img src="./assets/noun_Bicycle_25982.svg" alt="bicycle">
 
-          <div class="sidebar">
-            <div class="sidebar-cards">
-              <h4>Listening to.</h4>
-              <p><i class="fas fa-podcast"></i> Design Better Podcast.</p>
-            </div>
-            <div class="sidebar-cards">
-              <h4>Tweeting about.</h4>
-              <p><i class="fab fa-twitter"></i> Example of a tweet.</p>
-            </div>
-            <div class="sidebar-cards">
-              <h4>Sipping on.</h4>
-              <p><i class="fas fa-mug-hot"></i> St Ali Orthodox Roast.</p>
-            </div>
-            <div class="sidebar-cards">
-                <h4>Reading now. </h4>
-                <p><i class="fas fa-newspaper"></i> Title of a blog article.</p>
-              </div>
-          </div>
-          
+        <div class="hero-container" id="number2">
+          <h2>Approach</h2>
+          <p>I approach work like I approach life, with curiosity, innovation and caffeine.</p>
+          <p>I attempt to live up to the motto <em>Be interested and be interesting.</em></p>
+          <p>Click through for some of my programming projects.</p>
+          <button><a href="portfolio.html">Projects.</a></button>
         </div>
-    </div>
+
+        <div class="hero-container" id="number3">
+          <h2>Skills</h2>
+          <p>I am a firm believer in continuous learning and growth.</p>
+          <p>However, if I had to list a few skills of mine this is what I would say</p>
+          <p><strong>Hard skills</strong> Ruby, Ruby on rails, Javascript, Express.js, Node.js, Postgresql, API's, MongoDB, React.js, HTML and CSS</p>
+          <p>Hopefully one day making the perfect pour over coffee.</p>
+          <p><strong>Soft skills </strong>Public speaking, ideation, copywriting, microcopy, problem solving, design thinking and working in a team.</p>
+          <button><a href="assets/Resume - Isabelle Peskett.pdf" download>Resume</a></button>
+        </div>
+
+        <div class="hero-container" id="number4">
+          <h2>Side hustle</h2>
+          <p>It's the age of social media and podcasts, we all need a side hustle.</p>
+          <p>This is mine: <strong>Forme Superblends Under Construction.</strong></p>
+          <p>Site coming soon.</p>
+        </div>
+      </div>
   </div>
 </div>
   <div class="footer">
